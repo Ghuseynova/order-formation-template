@@ -1,0 +1,55 @@
+/** Basic styles **/
+html {
+	font-size: 62.5%;
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+	// outline: 1px solid red;
+}
+
+body {
+}
+
+.page {
+	width: 100%;
+	min-width: 320px;
+	overflow-x: hidden;
+}
+
+.container {
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+ul,
+ol {
+	list-style: none;
+}
+
+input,
+textarea,
+button,
+select,
+a {
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+h1,
+.h1 {
+}
+
+h2,
+.h2 {
+}
+
+.text {
+}
