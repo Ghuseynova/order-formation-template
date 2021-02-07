@@ -59,19 +59,14 @@ gulp.task('js', () => {
 		.pipe(browserSync.reload({ stream: true }));
 });
 
-gulp.task('vendors', () => {
-	return gulp
-		.src([
-			'src/js/jquery.js',
-			'src/js/validate.js',
-			'src/js/tiny-slider.js',
-			'src/js/email.js',
-		])
-		.pipe(concat('vendors.js'))
-		.pipe(uglify())
-		.pipe(gulp.dest('build/assets/js'))
-		.pipe(browserSync.reload({ stream: true }));
-});
+// gulp.task('vendors', () => {
+// 	return gulp
+// 		.src([])
+// 		.pipe(concat('vendors.js'))
+// 		.pipe(uglify())
+// 		.pipe(gulp.dest('build/assets/js'))
+// 		.pipe(browserSync.reload({ stream: true }));
+// });
 
 gulp.task('allimg', () => {
 	return gulp
@@ -101,7 +96,7 @@ gulp.task('images', () => {
 
 gulp.task('svg', () => {
 	return gulp
-		.src('src/img/icon/*.svg')
+		.src('src/img/icons/*.svg')
 		.pipe(
 			svgmin({
 				js2svg: {
@@ -112,6 +107,7 @@ gulp.task('svg', () => {
 		.pipe(
 			cheerio({
 				run: function ($) {
+					console.log($);
 					$('fill').removeAttr('fill');
 					$('stroke').removeAttr('stroke');
 					$('style').removeAttr('style');
@@ -124,12 +120,12 @@ gulp.task('svg', () => {
 			svgSprite({
 				mode: {
 					symbol: {
-						sprite: 'sprite.svg',
+						sprite: 'sprite.svg', //sprite file name
 					},
 				},
 			})
 		)
-		.pipe(gulp.dest('build/assets/img/icon'));
+		.pipe(gulp.dest('build/assets/img/icons'));
 });
 
 gulp.task('fonts', () => {
@@ -160,7 +156,7 @@ gulp.task(
 		'sass',
 		'pug',
 		'js',
-		'vendors',
+		// 'vendors',
 		'allimg',
 		'svg',
 		'fonts',
