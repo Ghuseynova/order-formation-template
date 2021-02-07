@@ -1,0 +1,24 @@
+form.form(action="#")
+  .form__group
+    .f-select.form__select
+      .f-select__title Выберите тип системы
+      +svg('assets/img/icons/symbol/sprite', 'icon-arrow-down')(class='f-select__toggle ')
+      ul.f-select__list
+        each sText in ['Sed ut perspiciatis', 'Nemo enim ipsam', 'Et harum quidem','Temporibus autem', 'Itaque earum rerum' ]
+          li.f-select__item= sText
+  .form__group
+    input(type="email" name="email" placeholder="Ваш e-mail").form__input.form-label
+  .form__group
+    input(type="text" name="name" placeholder="Ваше имя").form__input.form-label
+  .form__group
+    label.form__label(for="range")
+      |Sed ut perspiciatis, unde omnis iste natus
+      span.form__label-percent 75 %
+    input(type="range" name="range" id="range").form__input.form-label
+  .form__group
+    input(type="file" name="file" id="upload").form__input.form-label
+    label(for="upload").form__label
+      +svg('assets/img/icons/symbol/sprite', 'icon-file-1')(class='form__label-icon')
+      |Прикрепить файл
+  .form__bottom
+    button.button.button--blue.button--blue-lg.form__button Отправить

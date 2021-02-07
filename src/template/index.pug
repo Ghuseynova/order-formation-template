@@ -2,18 +2,38 @@ extends ../pug/layout.pug
 
 
 block content
-   section.s-main
-    .container
-        .s-main__content
-            h1.h1.s-main__title
-             |Lorem ipsum dolor sit amet consectetur adipiscing
-            .s-desc.s-main__desc
-                h3.h3.s-desc__title At vero eos et accusamus et iusto odio dignissimos ducimus!
-                ul.s-desc__list
-                    li.s-desc__item Totam rem aperiam eaque ipsa
-                    li.s-desc__item Sit voluptatem accusantium doloremque laudantium
-                    li.s-desc__item Sed ut perspiciatis, unde omnis iste natus error
-                    li.s-desc__item - Totam rem aperiam eaque ipsa
-            .buttons-group.s-main__buttons
-                button.button.button--blue.buttons-group__item Заказать
-                button.button.button--white.buttons-group__item Подробнее
+    section.s-main
+        .container
+            .s-main__content
+                h1.h1.s-main__title
+                |Lorem ipsum dolor sit amet consectetur adipiscing
+                .s-desc.s-main__desc
+                    h3.h3.s-desc__title At vero eos et accusamus et iusto odio dignissimos ducimus!
+                    ul.s-desc__list
+                        li.s-desc__item Totam rem aperiam eaque ipsa
+                        li.s-desc__item Sit voluptatem accusantium doloremque laudantium
+                        li.s-desc__item Sed ut perspiciatis, unde omnis iste natus error
+                        li.s-desc__item - Totam rem aperiam eaque ipsa
+                .buttons-group.s-main__buttons
+                    button.button.button--blue.buttons-group__item Заказать
+                    button.button.button--white.buttons-group__item Подробнее
+    section.s-order
+        .s-order__top
+            h2.h2.s-order__title Оформление  Заказа
+            p.s-order__desc Перед заполнением формы ознакомьтесь с нашей схемой работы!
+        .s-order__workflow
+            .workflow
+            - const wfItems = [{icon: {url: 'assets/img/icons/symbol/sprite', id: 'icon-search'}, text:'Lorem ipsum dolor sit amet'}, {icon: {url: 'assets/img/icons/symbol/sprite', id: 'icon-percent'}, text:'Сonsecteturadipiscing elit'}, {icon: {url: 'assets/img/icons/symbol/sprite', id: 'icon-file'}, text:'Sed do eiusmod tempor'},{icon: {url: 'assets/img/icons/symbol/sprite', id: 'icon-envelope'}, text:'Esse cillum doloreeu fugiat'},{icon: {url: 'assets/img/icons/symbol/sprite', id: 'icon-money'}, text:'Excepteur sint occaecat cupidatat non proident'}]
+            each wfitem in wfItems
+                .workflow__item
+                    span.workflow__item-icon
+                        +svg(wfitem.icon.url, wfitem.icon.id)
+                    span.workflow__item-text= wfitem.text
+                    span.dots.workflow__item-dots
+                        +svg('assets/img/icons/symbol/sprite', 'icon-dot')(class="dots__item")
+                        +svg('assets/img/icons/symbol/sprite', 'icon-dot')(class="dots__item")
+                        +svg('assets/img/icons/symbol/sprite', 'icon-dot')(class="dots__item")
+                        +svg('assets/img/icons/symbol/sprite', 'icon-dot')(class="dots__item")
+                        +svg('assets/img/icons/symbol/sprite', 'icon-dot')(class="dots__item")
+        .s-order__form
+            include ../pug/blocks/form
