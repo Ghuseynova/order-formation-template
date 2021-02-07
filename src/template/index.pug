@@ -2,4 +2,18 @@ extends ../pug/layout.pug
 
 
 block content
-    h1 Hello world
+   section.s-main
+    .container
+        .s-main__content
+            h1.h1.s-main__title
+             |Lorem ipsum dolor sit amet consectetur adipiscing
+            .s-desc.s-main__desc
+                h3.h3.s-desc__title At vero eos et accusamus et iusto odio dignissimos ducimus!
+                ul.s-desc__list
+                    li.s-desc__item Totam rem aperiam eaque ipsa
+                    li.s-desc__item Sit voluptatem accusantium doloremque laudantium
+                    li.s-desc__item Sed ut perspiciatis, unde omnis iste natus error
+                    li.s-desc__item - Totam rem aperiam eaque ipsa
+            .buttons-group.s-main__buttons
+                button.button.button--blue.buttons-group__item Заказать
+                button.button.button--white.buttons-group__item Подробнее

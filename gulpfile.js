@@ -107,7 +107,6 @@ gulp.task('svg', () => {
 		.pipe(
 			cheerio({
 				run: function ($) {
-					console.log($);
 					$('fill').removeAttr('fill');
 					$('stroke').removeAttr('stroke');
 					$('style').removeAttr('style');
