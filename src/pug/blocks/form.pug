@@ -4,8 +4,10 @@ form.form(action="#")
       .f-select__title Выберите тип системы
       +svg('assets/img/icons/symbol/sprite', 'icon-arrow-down')(class='f-select__toggle ')
       ul.f-select__list
-        each sText in ['Sed ut perspiciatis', 'Nemo enim ipsam', 'Et harum quidem','Temporibus autem', 'Itaque earum rerum' ]
-          li.f-select__item= sText
+        each sItem in [{id: 1, text:'Sed ut perspiciatis'}, {id: 2, text: 'Nemo enim ipsam'}, {id: 3, text:'Et harum quidem'},{id: 4, text:'Temporibus autem'}, {id: 5, text: 'Itaque earum rerum'} ]
+          li.f-select__item 
+            input(type="radio" id=`radio_${sItem.id}`).f-select__item-radio
+            label(for=`radio_${i}`).f-select__label= sItem.text
   .form__group
     input(type="email" name="email" placeholder="Ваш e-mail").form__input.form-label
   .form__group
