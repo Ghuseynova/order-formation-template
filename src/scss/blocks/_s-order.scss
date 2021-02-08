@@ -1,0 +1,47 @@
+.s-order {
+	position: relative;
+	padding: 12rem 0 13.4rem;
+	background-color: #272733;
+
+	&::after {
+		content: '';
+		position: absolute;
+		top: 0;
+		right: 0;
+		left: 0;
+		bottom: 0;
+		display: inline-block;
+		background: url(../img/bg-map.png) no-repeat center;
+		background-size: cover;
+		// opacity: 0.1;
+		z-index: 0;
+	}
+
+	&__inner {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		z-index: 1;
+	}
+
+	&__top {
+		text-align: center;
+	}
+
+	&__title {
+		margin-bottom: 3rem;
+	}
+
+	&__desc {
+		color: #bbbbbb;
+		font-size: 1.8rem;
+		line-height: 2.2rem;
+	}
+
+	&__workflow {
+		margin: 8rem 0 13.2rem;
+	}
+
+	&__form {
+	}
+}

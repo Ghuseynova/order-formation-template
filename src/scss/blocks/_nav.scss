@@ -1,0 +1,30 @@
+.nav {
+	&__list {
+		display: flex;
+	}
+
+	&__item {
+		margin: 0 2.5rem;
+	}
+
+	&__link {
+		display: inline-block;
+		color: #ffffff;
+		font-size: 1.3rem;
+		font-weight: 600;
+		line-height: 1.8rem;
+		letter-spacing: 0.033rem;
+		text-decoration: none;
+		text-transform: uppercase;
+		transition: color 0.4s;
+
+		&:hover {
+			color: #43abf0;
+		}
+
+		&--active {
+			color: #43abf0;
+			pointer-events: none;
+		}
+	}
+}

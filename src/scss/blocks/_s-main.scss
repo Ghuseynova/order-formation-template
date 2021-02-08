@@ -1,0 +1,21 @@
+.s-main {
+	height: 100vh;
+	max-height: 85rem;
+	background: url(../img/welcome-bg.png) no-repeat center;
+	background-size: cover;
+
+	&__content {
+		padding: 14.5rem 0 19rem;
+	}
+
+	&__title {
+		margin-bottom: 7.4rem;
+	}
+
+	&__desc {
+		margin-bottom: 7.6rem;
+	}
+
+	&__buttons {
+	}
+}

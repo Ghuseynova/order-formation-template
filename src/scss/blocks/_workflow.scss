@@ -1,0 +1,45 @@
+.workflow {
+	display: flex;
+	justify-content: space-between;
+
+	&__item {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		flex: 0 0 calc(100% / 5);
+	}
+
+	&__item-icon {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 10rem;
+		height: 10rem;
+		min-height: 10rem;
+		margin-bottom: 2rem;
+		border: 5px solid #286690;
+		border-radius: 50%;
+		background-color: #3e9cdc;
+
+		svg {
+			width: 3.6rem;
+			height: 3.8rem;
+			fill: #ffffff;
+		}
+	}
+
+	&__item-text {
+		color: #ffffff;
+		font-size: 1.6rem;
+		font-weight: 400;
+		line-height: 2rem;
+		text-align: center;
+	}
+
+	&__item-dots {
+		position: absolute;
+		top: 4.8rem;
+		right: -58px;
+	}
+}

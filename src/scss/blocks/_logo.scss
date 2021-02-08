@@ -1,0 +1,17 @@
+.logo {
+	display: inline-block;
+	width: 24.6rem;
+	text-decoration: none;
+
+	&__text {
+		color: #ffffff;
+		font-family: 'Raleway';
+		font-size: 2.8rem;
+		font-weight: 800;
+		text-transform: uppercase;
+
+		&--blue {
+			color: #42a9ed;
+		}
+	}
+}

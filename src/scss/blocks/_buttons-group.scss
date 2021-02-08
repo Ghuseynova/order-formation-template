@@ -1,0 +1,9 @@
+.buttons-group {
+	&__item {
+		margin-right: 2.6rem;
+
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+}

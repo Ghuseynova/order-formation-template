@@ -1,10 +1,12 @@
 header.header
   .container.header__inner
-    .logo.header__logo
-    .nav.hedaer__nav
+    a(href="/").logo.header__logo
+      span.logo__text LoremIpsum.
+      span.logo__text.logo__text--blue Net
+    .nav.header__nav
       ul.nav__list
         li.nav__item
-          a.nav__link(href="/") Бизнес
+          a.nav__link.nav__link--active(href="/") Бизнес
         li.nav__item
           a.nav__link(href="/") О нас
         li.nav__item

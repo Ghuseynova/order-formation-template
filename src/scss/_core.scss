@@ -18,14 +18,18 @@ body {
 	font-family: 'Lato', sans-serif;
 	font-weight: normal;
 	line-height: 1;
+	letter-spacing: normal;
 }
 
 .page {
+	position: relative;
 	width: 100%;
 	min-width: 320px;
 }
 
 .container {
+	max-width: 117rem;
+	margin: 0 auto;
 }
 
 img {
@@ -48,10 +52,42 @@ a {
 
 h1,
 .h1 {
+	font-size: 4.8rem;
+	font-weight: 700;
+	line-height: 6.4rem;
+	text-transform: uppercase;
+
+	&--blue {
+		color: #3e9cdc;
+	}
+
+	&--dark {
+		color: #272733;
+	}
 }
 
 h2,
 .h2 {
+	font-size: 3.6rem;
+	font-weight: 800;
+	line-height: 1;
+	text-transform: uppercase;
+
+	&--blue {
+		color: #3e9cdc;
+	}
+
+	&--white {
+		color: #ffffff;
+	}
+}
+
+h3,
+.h3 {
+	color: #2a2b30;
+	font-size: 2rem;
+	font-weight: 700;
+	line-height: 3.4rem;
 }
 
 .text {

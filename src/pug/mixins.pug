@@ -5,6 +5,6 @@ mixin svg(svg_url, svg_id)
 mixin linksGroup(links)
   .links-group
     each link in links
-      .links-group__link
+      a(href="/").links-group__link
         +svg(link.icon.url, link.icon.id)
         = link.text

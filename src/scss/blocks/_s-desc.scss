@@ -1,0 +1,26 @@
+.s-desc {
+	color: #2a2b30;
+	font-family: Lato;
+	font-size: 2rem;
+	line-height: 3.4rem;
+
+	&__title {
+	}
+
+	&__list {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__item {
+		display: flex;
+		align-items: center;
+		font-weight: 400;
+
+		&::before {
+			content: '-';
+			display: inline-block;
+			padding-right: 0.5rem;
+		}
+	}
+}
