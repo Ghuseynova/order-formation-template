@@ -1,2 +1,45 @@
 .form-label {
+	width: 100%;
+	padding: 1.2rem 1.6rem;
+	border-radius: 0.3rem;
+	border: 1px solid #ffffff;
+	background-color: #ffffff;
+	color: #272733;
+	font-size: 1.8rem;
+	line-height: 2.2rem;
+	transition: border-color 0.4s;
+
+	&:focus {
+		outline: none;
+		border-color: #3e9cdc;
+	}
+
+	&[type='range'] {
+		-webkit-appearance: none;
+		height: 0.6rem;
+		padding: 0;
+		border-radius: 0.3rem;
+		border: 1px solid #ffffff;
+		background-color: #ffffff;
+
+		&::-webkit-slider-thumb {
+			-webkit-appearance: none;
+			appearance: none;
+			width: 2.4rem;
+			height: 2.4rem;
+			border-radius: 50%;
+			border: 3px solid #286690;
+			background-color: #42a9ed;
+			cursor: pointer;
+		}
+
+		&::-moz-range-thumb {
+			width: 2.4rem;
+			height: 2.4rem;
+			border-radius: 50%;
+			border: 3px solid #286690;
+			background-color: #42a9ed;
+			cursor: pointer;
+		}
+	}
 }
