@@ -30,6 +30,10 @@ body {
 .container {
 	max-width: 117rem;
 	margin: 0 auto;
+
+	@media screen and (max-width: 75em) {
+		padding: 0 3rem;
+	}
 }
 
 img {
@@ -56,6 +60,11 @@ h1,
 	font-weight: 700;
 	line-height: 6.4rem;
 	text-transform: uppercase;
+
+	@media screen and (max-width: 75em) {
+		font-size: 4.2rem;
+		line-height: 5.8rem;
+	}
 
 	&--blue {
 		color: #3e9cdc;

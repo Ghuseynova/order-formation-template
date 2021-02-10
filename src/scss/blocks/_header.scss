@@ -9,6 +9,10 @@
 	align-items: center;
 	background-color: transparent;
 
+	@media screen and (max-width: 75em) {
+		height: 8rem;
+	}
+
 	&::after {
 		content: '';
 		position: absolute;

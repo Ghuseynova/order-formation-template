@@ -5,6 +5,14 @@
 
 	&__item {
 		margin: 0 2.5rem;
+
+		&:last-child {
+			margin-right: 0;
+		}
+
+		@media screen and (max-width: 75em) {
+			margin: 0 1.5rem;
+		}
 	}
 
 	&__link {

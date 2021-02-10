@@ -17,7 +17,7 @@ form.form(action="#")
     label.form__label.form__label--range(for="range")
       |Sed ut perspiciatis, unde omnis iste natus
       span.form__label-percent 75 %
-    input(type="range" name="range" id="range").form__input.form-label
+    input(type="range" name="range" id="range" min="0" max="100" value="75").form__input.form-label
   .form__group
     input(type="file" name="file" id="upload").form__input.form__input--upload
     label(for="upload").form__label.form__label--upload

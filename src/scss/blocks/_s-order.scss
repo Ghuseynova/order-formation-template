@@ -40,6 +40,10 @@
 
 	&__workflow {
 		margin: 8rem 0 13.2rem;
+
+		@media screen and (max-width: 75em) {
+			margin: 8rem 0rem;
+		}
 	}
 
 	&__form {
