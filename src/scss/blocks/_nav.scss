@@ -1,38 +1,63 @@
 .nav {
-	&__list {
-		display: flex;
-	}
-
-	&__item {
-		margin: 0 2.5rem;
-
-		&:last-child {
-			margin-right: 0;
-		}
-
-		@media screen and (max-width: 75em) {
-			margin: 0 1.5rem;
-		}
-	}
-
-	&__link {
-		display: inline-block;
-		color: #ffffff;
-		font-size: 1.3rem;
-		font-weight: 600;
-		line-height: 1.8rem;
-		letter-spacing: 0.033rem;
-		text-decoration: none;
-		text-transform: uppercase;
-		transition: color 0.4s;
-
-		&:hover {
-			color: #43abf0;
-		}
-
-		&--active {
-			color: #43abf0;
-			pointer-events: none;
-		}
-	}
+    $n: &;
+    @media screen and (max-width: 47.94em) {
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: rgba(#10101d, 0.5);
+        visibility: hidden;
+        opacity: 0;
+        transition: opacity 0.4s, visibility 0.4s;
+    }
+    &--active {
+        visibility: visible;
+        opacity: 1;
+        #{$n}__list {
+            transform: translate3d(0, 0, 0);
+        }
+    }
+    &__list {
+        display: flex;
+        @media screen and (max-width: 47.94em) {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            width: auto;
+            margin-left: 20%;
+            padding: 2.5rem;
+            background-color: #10101d;
+            transform: translate3d(100%, 0, 0);
+            transition: transform 0.4s ease-out 0.5s;
+        }
+    }
+    &__item {
+        margin: 0 2.5rem;
+        &:last-child {
+            margin-right: 0;
+        }
+        @media screen and (max-width: 75em) {
+            margin: 0 1.5rem;
+        }
+    }
+    &__link {
+        display: inline-block;
+        color: #ffffff;
+        font-size: 1.3rem;
+        font-weight: 600;
+        line-height: 1.8rem;
+        letter-spacing: 0.033rem;
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: color 0.4s;
+        &:hover {
+            color: #43abf0;
+        }
+        &--active {
+            color: #43abf0;
+            pointer-events: none;
+        }
+    }
 }

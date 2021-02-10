@@ -1,18 +1,15 @@
 @charset 'UTF-8';
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap');
-
 @import 'reset';
 @import 'variables';
 @import 'fonts';
 @import 'mixins';
 @import 'core';
-
 //libs
 // @import 'lib/somelib';
-
 //blocks
-
 @import 'blocks/header';
+@import 'blocks/burger';
 @import 'blocks/logo';
 @import 'blocks/nav';
 @import 'blocks/s-main';
@@ -28,5 +25,4 @@
 @import 'blocks/f-select';
 @import 'blocks/input';
 //custom
-
 @import 'custom';
