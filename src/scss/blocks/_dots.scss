@@ -3,6 +3,10 @@
 	justify-content: space-between;
 	width: 11.2rem;
 
+	@media screen and (max-width: 47.94em) {
+		display: none;
+	}
+
 	&__item {
 		width: 0.6rem;
 		height: 0.6rem;

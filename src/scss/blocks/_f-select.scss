@@ -4,6 +4,11 @@
 	font-size: 1.8rem;
 	line-height: 2.2rem;
 
+	@media screen and (max-width: 47.94em) {
+		font-size: 1.6rem;
+		line-height: 2rem;
+	}
+
 	&--opened {
 		#{$s}__btn {
 			border-radius: 0.3rem 0.3rem 0 0;
@@ -94,6 +99,11 @@
 			line-height: 3.4rem;
 			transition: color 0.4s;
 			cursor: pointer;
+
+			@media screen and (max-width: 47.94em) {
+				font-size: 1.6rem;
+				line-height: 3.2rem;
+			}
 
 			&:hover {
 				color: #42a9ed;

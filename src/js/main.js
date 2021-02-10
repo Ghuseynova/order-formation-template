@@ -67,6 +67,20 @@ function onRangeInput() {
 		document.querySelector('.form__label-percent').textContent = `${percent} %`;
 	});
 }
+
+function onBurgerClick() {
+	const burger = document.querySelector('.burger');
+	const menu = document.querySelector('.nav');
+	const body = document.body;
+
+	burger.addEventListener('click', function () {
+		burger.classList.toggle('burger--opened');
+		menu.classList.toggle('nav--active');
+		body.classList.toggle('page--unscrolled');
+	});
+}
+
 createCustomSelect();
 createCustomInputFile();
 onRangeInput();
+onBurgerClick();

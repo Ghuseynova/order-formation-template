@@ -2,6 +2,10 @@
 	&__item {
 		margin-right: 2.6rem;
 
+		@media screen and (max-width: 47.94em) {
+			margin: 0 0 1.5rem;
+		}
+
 		&:last-child {
 			margin-right: 0;
 		}

@@ -1,11 +1,14 @@
 .s-main {
-	height: 100vh;
 	max-height: 85rem;
 	background: url(../img/welcome-bg.png) no-repeat center;
 	background-size: cover;
 
 	&__content {
 		padding: 14.5rem 0 19rem;
+
+		@media screen and (max-width: 47.94em) {
+			padding: 12rem 0 15rem;
+		}
 	}
 
 	&__title {
@@ -21,6 +24,10 @@
 
 		@media screen and (max-width: 75em) {
 			margin-bottom: 5.6rem;
+		}
+
+		@media screen and (max-width: 47.94em) {
+			margin-bottom: 2.6rem;
 		}
 	}
 

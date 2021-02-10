@@ -9,6 +9,11 @@
 	line-height: 2.2rem;
 	transition: border-color 0.4s;
 
+	@media screen and (max-width: 47.94em) {
+		font-size: 1.6rem;
+		line-height: 2rem;
+	}
+
 	&:focus {
 		outline: none;
 		border-color: #3e9cdc;

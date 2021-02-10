@@ -13,6 +13,10 @@
 		height: 8rem;
 	}
 
+	@media screen and (max-width: 47.94em) {
+		height: 7rem;
+	}
+
 	&::after {
 		content: '';
 		position: absolute;

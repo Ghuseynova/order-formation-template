@@ -21,6 +21,11 @@
 			padding: 0;
 		}
 
+		@media screen and (max-width: 47.94em) {
+			flex: 0 0 100%;
+			margin-bottom: 1.5rem;
+		}
+
 		&::after {
 			content: '';
 			position: absolute;
@@ -32,6 +37,10 @@
 
 			@media screen and (max-width: 75em) {
 				right: -3.2rem;
+			}
+
+			@media screen and (max-width: 47.94em) {
+				display: none;
 			}
 		}
 
@@ -49,6 +58,10 @@
 					display: none;
 				}
 			}
+
+			@media screen and (max-width: 47.94em) {
+				margin-top: 0;
+			}
 		}
 
 		&:last-child {
@@ -58,6 +71,11 @@
 				padding-left: 2rem;
 				display: flex;
 				justify-content: flex-end;
+			}
+
+			@media screen and (max-width: 47.94em) {
+				padding-left: 0;
+				justify-content: center;
 			}
 
 			&::after {

@@ -34,6 +34,13 @@
 			font-weight: 600;
 			line-height: 2.2rem;
 			letter-spacing: normal;
+
+			@media screen and (max-width: 47.94em) {
+				min-width: initial;
+				padding: 1rem 3rem;
+				font-size: 1.4rem;
+				line-height: 2rem;
+			}
 		}
 	}
 
