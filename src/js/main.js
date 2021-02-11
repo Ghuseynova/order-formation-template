@@ -1,3 +1,12 @@
+function init() {
+	createCustomSelect();
+	createCustomInputFile();
+	onRangeInput();
+	onBurgerClick();
+}
+
+init();
+
 function createCustomSelect() {
 	document
 		.querySelector('.f-select__btn')
@@ -79,8 +88,3 @@ function onBurgerClick() {
 		body.classList.toggle('page--unscrolled');
 	});
 }
-
-createCustomSelect();
-createCustomInputFile();
-onRangeInput();
-onBurgerClick();

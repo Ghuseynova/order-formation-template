@@ -57,7 +57,7 @@
 			display: flex;
 			align-items: center;
 			justify-content: center;
-			padding: 1.2rem 1.6rem;
+			padding: 1.1rem 1.6rem;
 			border-radius: 0.3rem;
 			border: 2px solid #3e9cdc;
 			background-color: #ffffff;
@@ -68,7 +68,6 @@
 			cursor: pointer;
 
 			@media screen and (max-width: 47.94em) {
-				padding: 1.1rem 1.6rem;
 				font-size: 1.4rem;
 				line-height: 2rem;
 			}
